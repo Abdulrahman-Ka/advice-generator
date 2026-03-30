@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import dice from "../images/icon-dice.svg";
+import divider from "../images/pattern-divider-desktop.svg";
 
 interface IAdvice {
   id: number;
@@ -37,7 +39,8 @@ function App() {
 
         <div className="flex flex-col gap-0 items-center justify-center">
           <img
-            src="/images/pattern-divider-desktop.svg"
+            src={divider}
+            // src="images/pattern-divider-desktop.svg"
             className="w-[80%]"
             alt="divider"
           />
@@ -48,7 +51,7 @@ function App() {
             }}
             className="relative top-19 left-0 bg-green-300 p-4 rounded-full cursor-pointer hover:shadow-2xl hover:transition-shadow hover:duration-500 hover:ease-in"
           >
-            <img src="/images/icon-dice.svg" alt="dice icon" />
+            <img src={dice} alt="dice icon" />
           </button>
         </div>
       </div>

@@ -1,0 +1,34 @@
+/* 1. Import Google Font for Manrope */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800");
+
+/* 2. Import Tailwind v4 */
+@import "tailwindcss";
+
+/* 3. Define your custom design tokens */
+@theme {
+  /* Layout Breakpoints */
+  --breakpoint-mobile: 375px;
+  --breakpoint-desktop: 1440px;
+
+  /* Primary Colors */
+  --color-blue-200: hsl(193, 38%, 86%);
+  --color-green-300: hsl(150, 100%, 66%);
+
+  /* Neutral Colors */
+  --color-gray-600: hsl(217, 19%, 38%);
+  --color-gray-900: hsl(217, 19%, 24%);
+  --color-gray-950: hsl(218, 23%, 16%);
+
+  /* Typography */
+  --font-manrope: "Manrope", sans-serif;
+  --text-quote: 28px;
+
+  --shadow-2xl:
+    1px -2px 24px 12px rgb(82 255 168 /0.3);
+}
+
+@layer base {
+  body {
+    @apply bg-gray-950;
+  }
+}
